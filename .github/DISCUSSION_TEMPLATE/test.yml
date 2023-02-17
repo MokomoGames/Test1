@@ -1,7 +1,29 @@
-title: "[General] "
-labels: ["General Introduction"]
+title: "[改善したい課題のタイトルを記入] "
 body:
-  - type: markdown
+  - type: textarea
+    id: overview
     attributes:
+      label: 概要
       value: |
-        This is text that will show up in the template!
+        <ここに概要を記入>
+      render: bash
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: 現状の問題点
+      value: |
+        <ここに現状の問題点を記入>
+      render: markdown
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: 解決のためのたたき台
+      value: |
+        <何かたたき台があれば、ここに記入>
+      render: markdown
+    validations:
+      required: false
