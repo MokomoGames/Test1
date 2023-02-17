@@ -1,55 +1,29 @@
-title: "[General] "
-labels: ["General Introduction"]
+title: "[改善したい課題のタイトルを記入] "
 body:
-  - type: markdown
-    attributes:
-      value: |
-        This is text that will show up in the template!
   - type: textarea
-    id: improvements
+    id: overview
     attributes:
-      label: Top 3 improvements
-      description: "What are the top 3 improvements we could make to this project?"
+      label: 概要
       value: |
-        1.
-        2.
-        3.
-        ...
+        <ここに概要を記入>
       render: bash
     validations:
       required: true
-  - type: markdown
+  - type: textarea
+    id: issue
     attributes:
+      label: 現状の問題点
       value: |
-        ## Markdown header
-        And some more markdown
-  - type: input
-    id: has-id
-    attributes:
-      label: Suggestions
-      description: A description about suggestions to help you
+        <ここに現状の問題点を記入>
+      render: markdown
     validations:
       required: true
-  - type: dropdown
-    id: download
+  - type: textarea
+    id: solution
     attributes:
-      label: Which area of this project could be most improved?
-      options:
-        - Documentation
-        - Pull request review time
-        - Bug fix time
-        - Release cadence
-    validations:
-      required: true
-  - type: checkboxes
-    attributes:
-      label: Check that box!
-      options:
-        - label: This one!
-          required: true
-        - label: I won't stop you if you check this one, too
-  - type: markdown
-    attributes:
+      label: 解決のためのたたき台
       value: |
-        ### The thrilling conclusion
-        _to our template_
+        <何かたたき台があれば、ここに記入>
+      render: markdown
+    validations:
+      required: false
