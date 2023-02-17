@@ -1,34 +1,25 @@
 title: "[改善したい課題のタイトルを記入] "
 body:
-  - type: markdown
-    attributes:
-      value: "# 概要"
   - type: textarea
     id: overview
     attributes:
-      label: _
+      label: "概要"
       value: |
         <ここに概要を記入>
     validations:
       required: true
-  - type: markdown
-    attributes:
-      value: "# 現状の問題点"
   - type: textarea
     id: issue
     attributes:
-      label: _
+      label: "現状の問題点"
       value: |
         <ここに現状の問題点を記入>
     validations:
       required: true
-  - type: markdown
-    attributes:
-      value: "# 解決のためのたたき台"
   - type: textarea
     id: solution
     attributes:
-      label: _
+      label: "解決のためのたたき台"
       value: |
         <何かたたき台があれば、ここに記入>
     validations:
